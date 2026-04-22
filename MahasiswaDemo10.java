@@ -11,7 +11,7 @@ public class MahasiswaDemo10 {
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
-            System.out.println("5. Melihay Tugas Terbawah");
+            System.out.println("5. Melihat Tugas Terbawah");
             System.out.println("6. Melihat Jumlah Tugas");
             System.out.print("Pilih: ");
             pilih = sc.nextInt();
@@ -36,6 +36,8 @@ public class MahasiswaDemo10 {
                         int nilai = sc.nextInt();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
+                        String biner = stack.konversiDesimalKeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas: "+biner);
                     }
                     break;
                 case 3:
